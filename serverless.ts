@@ -20,7 +20,7 @@ const serverlessConfiguration: ServerlessFrameworkConfiguration = {
   plugins: ["serverless-esbuild", "serverless-prune-plugin"],
   provider: {
     name: "aws",
-    runtime: "nodejs18.x",
+    runtime: "nodejs16.x",
     region: "us-west-2",
     stage: '${opt:stage, "uat"}',
     environment: {
